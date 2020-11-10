@@ -24,7 +24,7 @@ const Message = () => {
 
       return (
         <View style={styles.message}>
-            <Image style={styles.message__img} source={require('./assets/tv.png')} />
+            <Image style={styles.message__img} source={require('../assets/tv.png')} />
             <Text style={styles.message__text} >Для получения списка сериалов, пожалуйста, выберите необходимый месяц и день</Text>
         </View>
     );

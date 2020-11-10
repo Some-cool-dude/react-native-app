@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
 
 const Item = ({item}) => (
     <Serial 
-        image={item.show.image.medium}
+        image={item.show.image}
         title={item.show.name}
         year={item.show.premiered.split('-')[0]}
         season={item.season}

@@ -34,7 +34,7 @@ const Serial = (props) => {
     return (
         <View style={styles.serial}>
             <View style={styles.serial__img}>
-                <Image style={{width: '100%', height:'100%', borderRadius:5}} source={{uri: props.image}} />
+                {props.image !== null && <Image style={{width: '100%', height:'100%', borderRadius:5}} source={{uri: props.image.medium}} />}
             </View>
             <View style={styles.serial__text}>
                 <Text style={{fontSize: 20}} ellipsizeMode='tail' numberOfLines={1}>{props.title}</Text>
